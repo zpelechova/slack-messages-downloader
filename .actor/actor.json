@@ -1,0 +1,69 @@
+{
+  "actorSpecification": 1,
+  "name": "tiktok-scraper",
+  "title": "Tiktok Scraper",
+  "description": "Scrapes Tiktok",
+  "version": "0.0.1",
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "title": "Tiktok Scraper",
+      "description": "Too see all scraped properties, export the whole dataset or select All fields instead of Overview",
+      "views": {
+        "overview": {
+          "title": "Overview",
+          "description": "",
+          "transformation": {
+            "fields": [
+                "username",
+                "text",
+                "date",
+                "type",
+                "subtype",
+                "ts",
+                "bot_id",
+                "app_id"
+            ]
+          },
+          "display": {
+            "component": "table",
+            "properties": {
+                "username": {
+                    "label":"Username",
+                    "format":"text"
+                },
+                "text": {
+                    "label":"Text",
+                    "format":"text"
+                },
+                "date": {
+                    "label":"Date",
+                    "format":"text"
+                },
+                "ts": {
+                    "label":"ID",
+                    "format":"text"
+                },
+                "type": {
+                    "label":"Type",
+                    "format":"text"
+                },
+                "subtype": {
+                    "label":"Subtype",
+                    "format":"text"
+                },
+                "bot_id": {
+                    "label":"Bot ID",
+                    "format":"text"
+                },
+                "app_id": {
+                    "label":"App ID",
+                    "format":"text"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,30 @@
+{
+    "title": "Input schema for the empty project actor.",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "token": {
+            "title": "Token",
+            "type": "string",
+            "description": "Slack bot token",
+            "editor": "textfield",
+            "isSecret": true
+        },
+        "channel": {
+            "title": "Channel ID",
+            "type": "string",
+            "description": "You can find the channel ID when while having the channel open you click on its title ('Get channel details') and then scroll all the way down.",
+            "editor": "textfield"
+        },
+        "oldest": {
+            "title": "How many days to the past you want to get the messages",
+            "type": "integer",
+            "description": "",
+            "editor": "number",
+            "minimum": 1,
+            "prefill": 10,
+            "default": 1095
+        }
+    },
+    "required": ["channel", "token"]
+}
